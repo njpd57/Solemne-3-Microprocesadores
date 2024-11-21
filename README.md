@@ -1,4 +1,11 @@
-# COORDINADOR_ELECTRICO
+# Solemne 3 y Recuperativa
+**Nicolás Palacios Díaz**
+**Tópicos de Especialidad - CINF1P09**
+**Programación de Microprocesadores**
+**Universidad Nacional Andrés Bello**
+**21/11/2024**
+
+
 # Proyecto de Predicción con LSTM
 
 Este proyecto utiliza una red LSTM para predecir valores basados en datos históricos. Los datos se almacenan en un archivo CSV y el entrenamiento del modelo se realiza utilizando CML (Continuous Machine Learning).

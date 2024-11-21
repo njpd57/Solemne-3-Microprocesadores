@@ -30,8 +30,8 @@ jobs:
       - name: Upload Predictions Plot
         uses: actions/upload-artifact@v3
         with:
-          name: predictions
-          path: predicciones.png
+          name: Imagenes
+          path: *.png
 
       - name: Finalize
         run: |
