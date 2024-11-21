@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 # Cargar los datos
 datos_combinadosAJAHUEL_H1 = pd.read_csv('data.csv')
-y3 = datos_combinadosAJAHUEL_H1['X3'].values
+y3 = datos_combinadosAJAHUEL_H1['presion'].values
 
 # Preparar los datos
 yw = []
