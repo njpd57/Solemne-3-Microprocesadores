@@ -14,7 +14,7 @@ OUTPUT_CSV_PATH = "output.csv"
 N_PAST          = 3     # 3 Horas
 N_FUTURE        = 5     # 5 Horas
 N_OUTPUT        = 2     # Temperatura y Humedad
-DATAFRAME_PATH  = "../../data.csv"
+DATAFRAME_PATH  = "data.csv"
 
 def split_series(series, n_past, n_future,columns):
     """
