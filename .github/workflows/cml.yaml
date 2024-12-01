@@ -1,4 +1,4 @@
-name: Train LSTM Model
+name: Entrenar y Exportar Modelo LSTM
 
 on:
   push:
@@ -15,7 +15,6 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          #python-version: '3.x'  
           python-version: '3.11'  
 
       - name: Install dependencies
@@ -27,12 +26,27 @@ jobs:
         run: |
           python train.py
 
-      - name: Upload Predictions Plot
+      - name: Subir Imagenes
         uses: actions/upload-artifact@v3
         with:
           name: Imagenes
-          path: ./*.png
+          path: ./out/IMAGES/*.png
 
-      - name: Finalize
-        run: |
-          echo "Training completed successfully."
+      - name: Subir Modelo Keras
+        uses: actions/upload-artifact@v3
+        with:
+          name: Modelo-Keras
+          path: ./out/HIGH_LEVEL_MODEL/model.keras
+
+      - name: Subir Modelo TfLite
+        uses: actions/upload-artifact@v3
+        with:
+          name: Modelo-TfLite
+          path: ./out/LITE_MODEL/model.tflite
+
+      - name: Subir Scaler
+        uses: actions/upload-artifact@v3
+        with:
+          name: Target-Scaler
+          path: ./out/SCALER/target-scaler.gz
+

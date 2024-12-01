@@ -1,5 +1,7 @@
 numpy
 pandas
-tensorflow-cpu
+tensorflow
 scikit-learn
 matplotlib
+joblib
+keras
