@@ -10,6 +10,7 @@ from tensorflow.keras.layers import LSTM,Dense, Input, Reshape
 from tensorflow.keras.callbacks import EarlyStopping
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import tensorflow as tf
+from sklearn.preprocessing import MinMaxScaler
 
 #Variables de Ruta
 OUTPUT_FILES    = "out"
@@ -109,8 +110,6 @@ df_clean = df.drop(columns=["hora"])
 df_clean = df_clean.reset_index(drop=True)
 
 #Escalar Datos
-from sklearn.preprocessing import MinMaxScaler
-
 scaler = MinMaxScaler(feature_range=(-1,1))
 df_scaled = scaler.fit_transform(df_clean.to_numpy())
 df_scaled = pd.DataFrame(df_scaled, columns=list(df_clean.columns))
