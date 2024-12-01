@@ -1,0 +1,1489 @@
+[
+    {
+        "id": "22cd34df7b662100",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f2ed046bc4ab76ae",
+        "type": "mqtt in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "topic": "esp32/gases",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ba61d2149ac9ae37",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "3e27c3a389180151"
+            ]
+        ]
+    },
+    {
+        "id": "17927afb72a53b20",
+        "type": "mqtt in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "topic": "esp32/luminosidad",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ba61d2149ac9ae37",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "c14565ebc5b880e4"
+            ]
+        ]
+    },
+    {
+        "id": "2d8c5a45c30b7414",
+        "type": "mqtt in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "topic": "esp32/humedad",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ba61d2149ac9ae37",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "3535c4724e09f2f7",
+                "40f3b352db1cb88c"
+            ]
+        ]
+    },
+    {
+        "id": "6b28e47756e07a23",
+        "type": "mqtt in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "topic": "esp32/temperatura",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ba61d2149ac9ae37",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "4b5bdb8e9d5d9088",
+                "63a388cf6a08cb88"
+            ]
+        ]
+    },
+    {
+        "id": "e22c5d3b4a00af16",
+        "type": "mqtt in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "topic": "esp32/presion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ba61d2149ac9ae37",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "2925a6f2bb5dcad6"
+            ]
+        ]
+    },
+    {
+        "id": "4b5bdb8e9d5d9088",
+        "type": "ui_chart",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "group": "5e521f6d2042c61d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 410,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3535c4724e09f2f7",
+        "type": "ui_chart",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "group": "f3d1b8e73c52119a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Humedad",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 380,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c14565ebc5b880e4",
+        "type": "ui_chart",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "group": "36b1f45be32384a6",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Luminosidad",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 390,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e27c3a389180151",
+        "type": "ui_chart",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "group": "f3d4c3850ec3c4f5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Gases",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2925a6f2bb5dcad6",
+        "type": "ui_chart",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "group": "e0a162bc754eaa3f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Presión",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 380,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7fde152fc1e20ab",
+        "type": "json",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 150,
+        "y": 660,
+        "wires": [
+            [
+                "98c2a1d4bcd55898"
+            ]
+        ]
+    },
+    {
+        "id": "98c2a1d4bcd55898",
+        "type": "debug",
+        "z": "22cd34df7b662100",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "424646713738ccb1",
+        "type": "mqtt in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "topic": "esp32/csv",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ba61d2149ac9ae37",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 480,
+        "wires": [
+            [
+                "01db472b54add16a"
+            ]
+        ]
+    },
+    {
+        "id": "d56f93858d2c49e2",
+        "type": "csv",
+        "z": "22cd34df7b662100",
+        "name": "CSV Parser",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "Tiempo,Gas,Temperatura,Humedad,Luminosidad,Presión",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 590,
+        "y": 460,
+        "wires": [
+            [
+                "75079ba9524aef21",
+                "9f2a0c429510840a"
+            ]
+        ]
+    },
+    {
+        "id": "316b092b5458c178",
+        "type": "file",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "filename": "/home/crist/data-csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1040,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75079ba9524aef21",
+        "type": "csv",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 790,
+        "y": 460,
+        "wires": [
+            [
+                "316b092b5458c178"
+            ]
+        ]
+    },
+    {
+        "id": "9f2a0c429510840a",
+        "type": "debug",
+        "z": "22cd34df7b662100",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "01db472b54add16a",
+        "type": "function",
+        "z": "22cd34df7b662100",
+        "name": "function 1",
+        "func": "msg.payload = Date.now()+\",\"+msg.payload\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 540,
+        "wires": [
+            [
+                "d56f93858d2c49e2"
+            ]
+        ]
+    },
+    {
+        "id": "6757dc9f.792504",
+        "type": "inject",
+        "z": "22cd34df7b662100",
+        "d": true,
+        "name": "",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "x": 210,
+        "y": 960,
+        "wires": [
+            [
+                "1c732195b8a1b843"
+            ]
+        ]
+    },
+    {
+        "id": "fa1abaf4.885038",
+        "type": "template",
+        "z": "22cd34df7b662100",
+        "name": "Image in",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<img width=\"100%\" src=\"data:image/png;base64,{{payload}}/>",
+        "output": "str",
+        "x": 640,
+        "y": 880,
+        "wires": [
+            [
+                "880ae59db9e1d662"
+            ]
+        ]
+    },
+    {
+        "id": "23f5cb94.03cb04",
+        "type": "file in",
+        "z": "22cd34df7b662100",
+        "d": true,
+        "name": "",
+        "filename": "/home/crist/Solemne-3-Microprocesadores/Comparativa-test-pred.png",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "b83253e6.36f6a"
+            ]
+        ]
+    },
+    {
+        "id": "b83253e6.36f6a",
+        "type": "base64",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "action": "",
+        "property": "payload",
+        "x": 740,
+        "y": 780,
+        "wires": [
+            [
+                "fa1abaf4.885038"
+            ]
+        ]
+    },
+    {
+        "id": "880ae59db9e1d662",
+        "type": "ui_template",
+        "z": "22cd34df7b662100",
+        "d": true,
+        "group": "b586a8f7.e060e8",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 760,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c732195b8a1b843",
+        "type": "ui_media",
+        "z": "22cd34df7b662100",
+        "d": true,
+        "group": "b586a8f7.e060e8",
+        "name": "",
+        "width": "26",
+        "height": "5",
+        "order": 1,
+        "category": "PNGS",
+        "file": "Comparativa-test-pred.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 450,
+        "y": 960,
+        "wires": [
+            [
+                "01e410e7c81c4ee3"
+            ]
+        ]
+    },
+    {
+        "id": "01e410e7c81c4ee3",
+        "type": "exec",
+        "z": "22cd34df7b662100",
+        "d": true,
+        "command": "/home/crist/update-images",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 480,
+        "y": 1040,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "562b3005e4b34bac",
+        "type": "inject",
+        "z": "22cd34df7b662100",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            [
+                "9eaf2e57b8f15a35"
+            ]
+        ]
+    },
+    {
+        "id": "9eaf2e57b8f15a35",
+        "type": "http request",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.callmebot.com/whatsapp.php?phone=56986806211&text=Iniciando+Sistema+Meteorológico&apikey=7059208",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2e681e52ea59153",
+        "type": "http request",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.callmebot.com/whatsapp.php?phone=56986806211&text=Obteniendo+nuevas+predicciones&apikey=7059208",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 1280,
+        "wires": [
+            [
+                "a435ae744b8660cc"
+            ]
+        ]
+    },
+    {
+        "id": "a435ae744b8660cc",
+        "type": "exec",
+        "z": "22cd34df7b662100",
+        "command": "/home/crist/update-predicitons.sh",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 660,
+        "y": 1280,
+        "wires": [
+            [],
+            [],
+            [
+                "43564d92adadd935",
+                "815bfd8f77fa9443"
+            ]
+        ]
+    },
+    {
+        "id": "43564d92adadd935",
+        "type": "switch",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 930,
+        "y": 1280,
+        "wires": [
+            [
+                "59d157136b65da9d"
+            ],
+            [
+                "745d65b2837b0659"
+            ]
+        ]
+    },
+    {
+        "id": "59d157136b65da9d",
+        "type": "http request",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.callmebot.com/whatsapp.php?phone=56986806211&text=Predicción+realizada&apikey=7059208",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1110,
+        "y": 1200,
+        "wires": [
+            [
+                "17f6fc5861efc9e8"
+            ]
+        ]
+    },
+    {
+        "id": "17f6fc5861efc9e8",
+        "type": "file in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "filename": "/home/crist/Solemne-3-Microprocesadores/src/runtime-final/output.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1470,
+        "y": 1180,
+        "wires": [
+            [
+                "b08ee4b7dea27624"
+            ]
+        ]
+    },
+    {
+        "id": "b08ee4b7dea27624",
+        "type": "csv",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1810,
+        "y": 1180,
+        "wires": [
+            [
+                "37f35b19b2fadbbf"
+            ]
+        ]
+    },
+    {
+        "id": "37f35b19b2fadbbf",
+        "type": "debug",
+        "z": "22cd34df7b662100",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1960,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "745d65b2837b0659",
+        "type": "http request",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.callmebot.com/whatsapp.php?phone=56986806211&text=Error+al+realizar+predicción&apikey=7059208",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1130,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1570bbe9908c926",
+        "type": "inject",
+        "z": "22cd34df7b662100",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 1280,
+        "wires": [
+            [
+                "e2e681e52ea59153"
+            ]
+        ]
+    },
+    {
+        "id": "815bfd8f77fa9443",
+        "type": "debug",
+        "z": "22cd34df7b662100",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "46c3c1f9d2c44835",
+        "type": "inject",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1760,
+        "wires": [
+            [
+                "2599be47a280c84e"
+            ]
+        ]
+    },
+    {
+        "id": "2599be47a280c84e",
+        "type": "file in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "filename": "/home/crist/Solemne-3-Microprocesadores/src/runtime-final/output.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 530,
+        "y": 1760,
+        "wires": [
+            [
+                "a664db1e3d1cd25b"
+            ]
+        ]
+    },
+    {
+        "id": "a664db1e3d1cd25b",
+        "type": "csv",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 850,
+        "y": 1660,
+        "wires": [
+            [
+                "967eac3d231d861d",
+                "1ccd96c93d17bb65",
+                "206764e938dc62ea"
+            ]
+        ]
+    },
+    {
+        "id": "967eac3d231d861d",
+        "type": "debug",
+        "z": "22cd34df7b662100",
+        "d": true,
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "6da1c91373448fb2",
+        "type": "ui_chart",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "group": "b586a8f7.e060e8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatura Predicha",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1320,
+        "y": 1580,
+        "wires": [
+            []
+        ],
+        "inputLabels": [
+            "Temperatura"
+        ]
+    },
+    {
+        "id": "197b3230fae372b1",
+        "type": "ui_chart",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "group": "b586a8f7.e060e8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Humedad Predicha",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "0",
+        "removeOlderPoints": "0",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1370,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ccd96c93d17bb65",
+        "type": "function",
+        "z": "22cd34df7b662100",
+        "name": "getTemperatura",
+        "func": "let data_arr = []\nlet dateNow =new Date();\n\nlet year = dateNow.getFullYear()\nlet month = dateNow.getMonth()\nlet day = dateNow.getDay()\nlet hour = dateNow.getHours()\n// Crear un array para almacenar las nuevas fechas\nconst futureDates = [];\n\n// Generar 5 nuevas fechas, añadiendo 1, 2, 3, 4 y 5 horas\nfor (let i = 1; i <= 5; i++) {\n    const newDate = new Date(year,month,day,hour);\n    newDate.setHours(newDate.getHours() + i);\n    futureDates.push(newDate.getTime());\n}\n\nfor (let obs in msg.payload){\n    data_arr.push({\n        \"x\":futureDates[obs],\n        \"y\":msg.payload[obs].Temperatura\n    })\n}\n\nlet finalData =\n    [{\n        \"series\": [\"Temperatura\"],\n        \"data\": [data_arr],\n        \"labels\": [\"\"]\n    }]\nmsg.payload = finalData\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 1560,
+        "wires": [
+            [
+                "6da1c91373448fb2"
+            ]
+        ]
+    },
+    {
+        "id": "951fae1501190ee9",
+        "type": "debug",
+        "z": "22cd34df7b662100",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "206764e938dc62ea",
+        "type": "function",
+        "z": "22cd34df7b662100",
+        "name": "getHumedad",
+        "func": "let data_arr = []\nlet dateNow =new Date();\n\nlet year = dateNow.getFullYear()\nlet month = dateNow.getMonth()\nlet day = dateNow.getDay()\nlet hour = dateNow.getHours()\n// Crear un array para almacenar las nuevas fechas\nconst futureDates = [];\n\n// Generar 5 nuevas fechas, añadiendo 1, 2, 3, 4 y 5 horas\nfor (let i = 1; i <= 5; i++) {\n    const newDate = new Date(year,month,day,hour);\n    newDate.setHours(newDate.getHours() + i);\n    futureDates.push(newDate.getTime());\n}\n\nfor (let obs in msg.payload){\n    data_arr.push({\n        \"x\":futureDates[obs],\n        \"y\":msg.payload[obs].Humedad\n    })\n}\n\nlet finalData =\n    [{\n        \"series\": [\"Humedad\"],\n        \"data\": [data_arr],\n        \"labels\": [\"\"]\n    }]\nmsg.payload = finalData\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 1880,
+        "wires": [
+            [
+                "197b3230fae372b1"
+            ]
+        ]
+    },
+    {
+        "id": "2c1d28d768f3a63f",
+        "type": "file in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "filename": "/home/crist/Solemne-3-Microprocesadores/src/runtime-final/output.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 810,
+        "y": 60,
+        "wires": [
+            [
+                "68c7c6e94cfe0f79"
+            ]
+        ]
+    },
+    {
+        "id": "9bd1317642cabc35",
+        "type": "function",
+        "z": "22cd34df7b662100",
+        "name": "Obtener % de Error",
+        "func": "let valor_predicho = msg.payload[0].Temperatura\nlet valor_real = msg.Temperatura\nnode.warn([valor_predicho,valor_real])\n\nconst error = Math.abs(valor_real -valor_predicho)\nconst errorPorcentual = (error / Math.abs(valor_real)) * 100;\n\nmsg.payload = errorPorcentual.toFixed(1)\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 60,
+        "wires": [
+            [
+                "49ab2362c35cfe5b"
+            ]
+        ]
+    },
+    {
+        "id": "63a388cf6a08cb88",
+        "type": "function",
+        "z": "22cd34df7b662100",
+        "name": "guardarTemperatura",
+        "func": "msg.Temperatura = msg.payload\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 60,
+        "wires": [
+            [
+                "2c1d28d768f3a63f"
+            ]
+        ]
+    },
+    {
+        "id": "68c7c6e94cfe0f79",
+        "type": "csv",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1130,
+        "y": 60,
+        "wires": [
+            [
+                "9bd1317642cabc35"
+            ]
+        ]
+    },
+    {
+        "id": "49ab2362c35cfe5b",
+        "type": "ui_gauge",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "group": "b586a8f7.e060e8",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Error de Temperatura",
+        "label": "Porcentaje",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1560,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "b44304aec528fde6",
+        "type": "file in",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "filename": "/home/crist/Solemne-3-Microprocesadores/src/runtime-final/output.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 790,
+        "y": 180,
+        "wires": [
+            [
+                "60d032a9da94577f"
+            ]
+        ]
+    },
+    {
+        "id": "40f3b352db1cb88c",
+        "type": "function",
+        "z": "22cd34df7b662100",
+        "name": "guardarHumedad",
+        "func": "msg.Humedad = msg.payload\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "b44304aec528fde6"
+            ]
+        ]
+    },
+    {
+        "id": "60d032a9da94577f",
+        "type": "csv",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1150,
+        "y": 180,
+        "wires": [
+            [
+                "c9ddb2668b58e4ea"
+            ]
+        ]
+    },
+    {
+        "id": "c9ddb2668b58e4ea",
+        "type": "function",
+        "z": "22cd34df7b662100",
+        "name": "Obtener % de Error",
+        "func": "let valor_predicho = msg.payload[0].Humedad\nlet valor_real = msg.Humedad\nnode.warn([valor_predicho,valor_real])\n\nconst error = Math.abs(valor_real -valor_predicho)\nconst errorPorcentual = (error / Math.abs(valor_real)) * 100;\n\nmsg.payload = errorPorcentual.toFixed(1)\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 180,
+        "wires": [
+            [
+                "c7dad4e13d707de2"
+            ]
+        ]
+    },
+    {
+        "id": "c7dad4e13d707de2",
+        "type": "ui_gauge",
+        "z": "22cd34df7b662100",
+        "name": "",
+        "group": "b586a8f7.e060e8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Error de Humedad",
+        "label": "Porcentaje",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1570,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ba61d2149ac9ae37",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5e521f6d2042c61d",
+        "type": "ui_group",
+        "name": "Temperatura",
+        "tab": "78c5ae14f4a05e03",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f3d1b8e73c52119a",
+        "type": "ui_group",
+        "name": "Humedad",
+        "tab": "78c5ae14f4a05e03",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "36b1f45be32384a6",
+        "type": "ui_group",
+        "name": "Luminosidad",
+        "tab": "78c5ae14f4a05e03",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f3d4c3850ec3c4f5",
+        "type": "ui_group",
+        "name": "Gas",
+        "tab": "78c5ae14f4a05e03",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e0a162bc754eaa3f",
+        "type": "ui_group",
+        "name": "Presión",
+        "tab": "78c5ae14f4a05e03",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b586a8f7.e060e8",
+        "type": "ui_group",
+        "name": "Predicción ",
+        "tab": "78c5ae14f4a05e03",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "78c5ae14f4a05e03",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
