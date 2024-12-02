@@ -1,4 +1,4 @@
-name: Entrenar y Exportar Modelo LSTM
+name: Entrenar y Exportar Modelo DecissionTree
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   train:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Train LSTM Model
+      - name: Train Model
         run: |
           python train.py
 
@@ -32,21 +32,8 @@ jobs:
           name: Imagenes
           path: ./out/IMAGES/*.png
 
-      - name: Subir Modelo Keras
+      - name: Subir Modelo
         uses: actions/upload-artifact@v3
         with:
           name: Modelo-Keras
-          path: ./out/HIGH_LEVEL_MODEL/model.keras
-
-      - name: Subir Modelo TfLite
-        uses: actions/upload-artifact@v3
-        with:
-          name: Modelo-TfLite
-          path: ./out/LITE_MODEL/model.tflite
-
-      - name: Subir Scaler
-        uses: actions/upload-artifact@v3
-        with:
-          name: Target-Scaler
-          path: ./out/SCALER/target-scaler.gz
-
+          path: ./out/MACHINE_MODEL/model.gz
