@@ -3,7 +3,7 @@ name: Entrenar y Exportar Modelo DecissionTree
 on:
   push:
     branches:
-      - main
+      - recuperativa
 
 jobs:
   train:
