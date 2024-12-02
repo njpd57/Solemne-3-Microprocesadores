@@ -1,4 +1,4 @@
-print("[+] Cargar Librerias")
+print("[+] Cargar Libreriass")
 import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
