@@ -1,4 +1,4 @@
-print("[+] Cargar Librersiass")
+print("[+] Cargar Libresias")
 import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
